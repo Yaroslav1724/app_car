@@ -1,0 +1,21 @@
+<footer class="footer">
+  <div class="waves">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+  </div>
+  <ul class="social-icon">
+    <li *ngFor="let item of listIcons" class="social-icon__item">
+      <a class="social-icon__link" href="#">
+        <ion-icon [name]="item.icon"></ion-icon>
+      </a>
+    </li>
+  </ul>
+  <ul class="menu">
+    <li *ngFor="let item of linkItems" class="menu__item">
+      <a class="menu__link" href="#">{{ item.title }}</a>
+    </li>
+  </ul>
+  <p>&copy;{{ year + " " + "Lukomskiy Yaroslav | All Rights Reserved" }}</p>
+</footer>
